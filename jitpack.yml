@@ -1,9 +1,5 @@
 jdk:
-  - openjdk16
+  - openjdk9
 before_install:
-  - sdk install java 16-tem
-  - sdk use java 16-tem
-  - sdk install maven
-  - mvn -v
-install:
-  - mvn install -Dmaven.javadoc.skip=true -DskipTests
+  - sdk install java 18.0.1.1-open
+  - sdk use java 18.0.1.1-open
