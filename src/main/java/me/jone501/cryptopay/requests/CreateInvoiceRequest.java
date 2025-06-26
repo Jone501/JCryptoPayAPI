@@ -41,6 +41,9 @@ public class CreateInvoiceRequest extends Request<BaseResponse<Invoice>> {
     @SerializedName("paid_btn_url")
     private URL paidButtonUrl;
 
+    @SerializedName("swap_to")
+    private String swapTo;
+
     @SerializedName("payload")
     private String payload;
 
@@ -135,6 +138,11 @@ public class CreateInvoiceRequest extends Request<BaseResponse<Invoice>> {
                 throw new IllegalArgumentException();
             request.paidButtonName = paidButtonName;
             request.paidButtonUrl = paidButtonUrl;
+            return this;
+        }
+
+        public Builder swapTo(Currency swapTo) {
+            request.swapTo = swapTo.code();
             return this;
         }
 

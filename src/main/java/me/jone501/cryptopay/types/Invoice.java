@@ -114,6 +114,48 @@ public class Invoice {
     @SerializedName("status")
     private InvoiceStatus status;
 
+    @ToString.Exclude
+    @SerializedName("swap_to")
+    private String swapTo;
+
+    @ToString.Include
+    public Currency swapTo() {
+        return Currencies.byCode(swapTo);
+    }
+
+    @Getter
+    @SerializedName("is_swapped")
+    private boolean isSwapped;
+
+    @Getter
+    @SerializedName("swapped_uid")
+    private String swappedUid;
+
+    @ToString.Exclude
+    @SerializedName("swapped_to")
+    private String swappedTo;
+
+    @ToString.Include
+    public Currency swappedTo() {
+        return Currencies.byCode(swappedTo);
+    }
+
+    @Getter
+    @SerializedName("swapped_rate")
+    private double swappedRate;
+
+    @Getter
+    @SerializedName("swapped_output")
+    private double swappedOutput;
+
+    @Getter
+    @SerializedName("swapped_usd_amount")
+    private double swappedUsdAmount;
+
+    @Getter
+    @SerializedName("swapped_usd_rate")
+    private double swappedUsdRate;
+
     @Getter
     @SerializedName("created_at")
     private Date createdAt;
