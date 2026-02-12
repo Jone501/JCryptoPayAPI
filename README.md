@@ -1,6 +1,6 @@
 ![JCryptoPayAPI](/header.png)
 
-# JCryptoPayAPI [![CryptoPay API Docs](https://img.shields.io/badge/CryptoPay%20API-Docs-blue)](https://help.crypt.bot/crypto-pay-api) [![JCryptoPayAPI JitPack](https://img.shields.io/badge/Maven%20Central-1.1.0-f18900)](https://central.sonatype.com/artifact/ru.jone501/JCryptoPayAPI) [![JCryptoPayAPI JitPack](https://jitpack.io/v/Jone501/JCryptoPayAPI.svg)](https://jitpack.io/#Jone501/JCryptoPayAPI)
+# JCryptoPayAPI [![CryptoPay API Docs](https://img.shields.io/badge/CryptoPay%20API-Docs-blue)](https://help.crypt.bot/crypto-pay-api) [![JCryptoPayAPI JitPack](https://img.shields.io/badge/Maven%20Central-1.1.0-f18900)](https://central.sonatype.com/artifact/ru.jone501/JCryptoPayAPI)
 Библиотека, позволяющая работать с [CryptoPay API](https://help.crypt.bot/crypto-pay-api) прямо в вашем Java-приложении. Поддерживает как синхронную, так и асинхронную работу с API.
 
 ## Подключение зависимости
